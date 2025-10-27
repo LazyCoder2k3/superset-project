@@ -1,0 +1,45 @@
+(base) itri@ubuntu:~/Working/NATu/voiceprint_superset/v1$ python3 som_service.py
+======================================================================
+ SOM Voice Processing Service
+======================================================================
+STB WebSocket: ws://10.60.3.236:8765
+SuperSet Binary: /home/itri/Working/NATu/voiceprint_superset/v1/SuperSet/superset
+SuperSet Directory: /home/itri/Working/NATu/voiceprint_superset/v1/SuperSet
+Auto unpair after 10 failures
+======================================================================
+Connected to STB WebSocket: ws://10.60.3.236:8765
+Successfully paired camera CAM001 with RTSP URL: rtsp://adminOnvif:Vision123@10.60.1.136/Streaming/Channels/102?transportmode=unicast&profile=Profile_1
+Started unified processing with merged SuperSet binary
+Starting unified processing loop for camera CAM001
+RTSP URL: rtsp://adminOnvif:Vision123@10.60.1.136/Streaming/Channels/102?transportmode=unicast&profile=Profile_1
+Using merged SuperSet binary: /home/itri/Working/NATu/voiceprint_superset/v1/SuperSet/superset
+Cycle 1: Failed to receive a valid event from SuperSet within the timeout.
+Cycle 1: Captured stderr from SuperSet:
+--- STDERR START ---
+[SuperSet] Starting merged voice processing...
+[SuperSet] RTSP URL: rtsp://adminOnvif:Vision123@10.60.1.136/Streaming/Channels/102?transportmode=unicast&profile=Profile_1
+Failed to verify graphs
+--- STDERR END ---
+Cycle 1: SuperSet process exited with error code: 1
+SuperSet cycle 1 failed
+Cycle 2: Failed to receive a valid event from SuperSet within the timeout.
+Cycle 2: Captured stderr from SuperSet:
+--- STDERR START ---
+[SuperSet] Starting merged voice processing...
+[SuperSet] RTSP URL: rtsp://adminOnvif:Vision123@10.60.1.136/Streaming/Channels/102?transportmode=unicast&profile=Profile_1
+Failed to verify graphs
+--- STDERR END ---
+Cycle 2: SuperSet process exited with error code: 1
+SuperSet cycle 2 failed
+Cycle 3: Failed to receive a valid event from SuperSet within the timeout.
+Cycle 3: Captured stderr from SuperSet:
+--- STDERR START ---
+[SuperSet] Starting merged voice processing...
+[SuperSet] RTSP URL: rtsp://adminOnvif:Vision123@10.60.1.136/Streaming/Channels/102?transportmode=unicast&profile=Profile_1
+Failed to verify graphs
+--- STDERR END ---
+Cycle 3: SuperSet process exited with error code: 1
+SuperSet cycle 3 failed
+^C
+
+Stopping service...
